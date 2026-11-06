@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Copper Groove Records — Crate and Checkout</title>
+<meta property="og:title" content="Copper Groove Records — Crate and Checkout">
+<meta property="og:description" content="Review your crate, apply GROOVE10, and check out with full validation and a real CG order reference. Portfolio concept by Brittany Nation.">
+<meta property="og:type" content="website"><meta property="og:image" content="https://brittanynation.github.io/copper-groove-records/og-image.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="description" content="Cart and checkout for Copper Groove Records, a fictional vinyl store portfolio concept by Brittany Nation.">
+<link rel="stylesheet" href="styles.css"></head><body><a class="skip" href="#main">Skip to content</a>
+<header class="site"><a class="logo" href="index.html">Copper <span>Groove</span> Records</a><nav class="main" aria-label="Main"><a href="index.html" >Shop Records</a><a href="cart.html" aria-current="page">Crate &amp; Checkout</a><a href="visit.html" >Visit &amp; Listening Nights</a></nav><button class="cartbtn" id="open-cart" type="button">Crate (<span class="cart-count">0</span>)</button></header>
+<main id="main"><div class="wrap"><h1>Your crate and checkout</h1>
+<div id="checkout-wrap"><div class="cols"><div><h2>Your crate</h2><div id="cart-items"></div>
+<p style="margin-top:16px"><label for="promo">Promo code</label> <input type="text" id="promo" placeholder="Try GROOVE10"> <button class="btn" id="apply-promo" type="button">Apply</button></p><p id="promo-msg" aria-live="polite"></p>
+<h2>Delivery and payment</h2>
+<form id="checkout-form" novalidate><div class="formgrid">
+<div class="field"><label for="f-name">Full name</label><input type="text" id="f-name" autocomplete="name"><span class="err" id="err-name"></span></div>
+<div class="field"><label for="f-email">Email</label><input type="email" id="f-email" autocomplete="email"><span class="err" id="err-email"></span></div>
+<div class="field full"><label for="f-address">Street address</label><input type="text" id="f-address" autocomplete="street-address"><span class="err" id="err-address"></span></div>
+<div class="field"><label for="f-city">City</label><input type="text" id="f-city" autocomplete="address-level2"><span class="err" id="err-city"></span></div>
+<div class="field"><label for="f-zip">ZIP code</label><input type="text" id="f-zip" autocomplete="postal-code"><span class="err" id="err-zip"></span></div>
+<div class="field full"><label for="f-card">Card number</label><input type="text" id="f-card" inputmode="numeric" placeholder="4242 4242 4242 4242"><span class="err" id="err-card"></span></div>
+<div class="field"><label for="f-exp">Expiry (MM/YY)</label><input type="text" id="f-exp" placeholder="12/28"><span class="err" id="err-exp"></span></div>
+<div class="field"><label for="f-cvc">CVC</label><input type="text" id="f-cvc" inputmode="numeric"><span class="err" id="err-cvc"></span></div>
+</div><p><button class="btn" type="submit">Place order</button></p><p style="font-family:Arial,sans-serif;font-size:.88rem">This is a portfolio demo — no real payment is taken and no card details leave your browser.</p></form></div>
+<aside class="summary"><h2 style="margin-top:0">Order summary</h2>
+<div class="sline"><span>Subtotal</span><span id="sum-sub">$0.00</span></div>
+<div class="sline"><span>Promo discount</span><span id="sum-disc">−$0.00</span></div>
+<div class="sline"><span>Shipping</span><span id="sum-ship">$0.00</span></div>
+<div class="sline"><span>Tax (7%)</span><span id="sum-tax">$0.00</span></div>
+<div class="sline total"><span>Total</span><span id="sum-total">$0.00</span></div>
+<p style="font-family:Arial,sans-serif;font-size:.88rem">Free shipping once your discounted subtotal reaches $75. Used records are graded honestly and play-tested before they ship.</p></aside></div></div>
+<div class="confirm" id="confirm" style="display:none"><h2>Order confirmed — thank you.</h2><p>Your order reference is <b id="confirm-ref"></b>.</p><p>Total charged in this demo: <b id="confirm-total"></b>. A receipt would be emailed to <span id="confirm-email"></span>.</p><p><a class="btn" href="index.html">Keep digging</a></p></div>
+</div></main>
+<footer><div class="wrap"><p><b>Copper Groove Records</b> — a fictional independent record store created as a portfolio concept by Brittany Nation.</p><p>Open Monday to Saturday 10am to 8pm, Sunday 12pm to 6pm · 418 Groove Lane (fictional address) · Listening bar closes 30 minutes before the shop.</p></div></footer><script src="cart.js"></script></body></html>
